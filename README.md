@@ -1,4 +1,4 @@
-# In this problem we need to understand, what exactly surrouned by 'X' means. It actually means that if we start from 'O' at the border, and we traverse only 'O', only those 'O' are not surrouned by 'X'. So the plan is the following:
+In this problem we need to understand, what exactly surrouned by 'X' means. It actually means that if we start from 'O' at the border, and we traverse only 'O', only those 'O' are not surrouned by 'X'. So the plan is the following:
 
 Start dfs or bfs from all 'O', which are on the border.
 When we traverse them, let us color them as '-1', temporary color.
