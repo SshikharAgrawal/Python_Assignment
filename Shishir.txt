@@ -1,0 +1,9 @@
+simple dfs problem:
+
+Take n and m(matrix dimensions) input from the user.
+Create a matrix of n*m size. This matrix contains 'X' and 'O'.
+Now according to question, we need to flip all O's that are 4 directionally surrounded by 'X'.
+call DFS from each cell on the boundary of the board which contains 'O'.
+While performing Dfs, mark all the cells(O's) as -1. -1 indicates that these cells will not be converted to 'X' since they are connected to boundary.
+Now the O's that are left are our target. Convert all these leftover O's to 'X'.
+Now traverse the matrix again and convert all '-1s' back to 'O'. These O's will not be converted, so changing them back.
